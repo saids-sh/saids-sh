@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/*
+inotifywait -m -r -e modify,create,delete --format '%w%f' **scss/** | while read FILE; do
+    echo "¡Cambio detectado en $FILE! Compilando..."
+    sassc **scss/style.scss** **style/style.css**
+    echo "Compilación lista."
+done
+*/
