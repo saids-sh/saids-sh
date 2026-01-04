@@ -2,6 +2,7 @@ $mainBG-LT: rgba(245, 245, 250, 1);
 $secondaryBG-LT: rgba(230, 230, 240, 1);
 $text-LT: rgba(30, 30, 45, 1);
 $pinkAccent-LT: rgba(200, 20, 80, 1);
+$cyanAccent-LT: rgba(0, 160, 175, 1);
 $shadow-LT: rgba(30, 30, 45, 0.2);
 
 $mainBG-DT: rgba(16, 8, 24, 1);
@@ -25,5 +26,7 @@ $containers-DT: rgba(26, 2, 37, 1);
     --mainBG: #{$mainBG-LT};
     --secondaryBG: #{$secondaryBG-LT};
     --text: #{$text-LT};
+    --pinkAccent: #{$pinkAccent-LT};
+    --cyanAccent: #{$cyanAccent-LT};
     --shadow: #{$shadow-LT};
 }

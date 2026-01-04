@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../style/style.css">
-        <script src="../scripts/themeToggle.js"></script>
+        <script src="../scripts/themeToggle.js" defer></script>
+        <script src="../scripts/yearUpdate.js" defer></script>
         <title>saids.sh</title>
     </head>
 
@@ -34,14 +35,105 @@
         <main>
             <!---->
             <div class="saids-sh">
-                <!---->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi saepe minus ducimus aut non fugiat quae dolores error alias tenetur eligendi dolorem commodi, adipisci sapiente facilis ex assumenda explicabo enim.</p>
+
+                <!-- Profile section: image + description -->
+                <div class="profile">
+                    <img src="../assets/images/pic.png" alt="saids ruby profile picture">
+                    <div class="description">
+                        <h2>Saids Ruby</h2>
+                        <p>Self-taught technician with hands-on experience assembling, repairing, and maintaining PCs. Strong proficiency with hardware and software, diagnostic skills, and teamwork. Seeking to join a shared technical support environment where I can grow and apply my knowledge with responsibility and commitment.</p>
+                    </div>
+                </div>
+
+                <!-- ===== MAIN INFORMATION CONTENT ===== -->
+                <section class="content">
+
+                    <!-- Interests section -->
+                    <div class="interests">
+                        <h3>interests </h3>
+                        <ul class="list">
+                            <li>Coffee</li>
+                            <li>Gaming</li>
+                            <li>Programming</li>
+                            <li>Robotic</li>
+                            <li>Hardware & Software</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills section -->
+                    <div class="skills">
+                        <h3>skills </h3>
+                        <ul class="list">
+                            <li>Installation of operating systems</li>
+                            <li>Hardware handling and PC assembly</li>
+                            <li>Diagnosis of common faults</li>
+                            <li>Basic networking and connectivity</li>
+                            <li>Office software proficiency</li>
+                        </ul>
+                    </div>
+
+                    <!-- Work experience section -->
+                    <div class="experience">
+                        <h3>experience </h3>
+                        <ul class="list">
+                            <li>Computer Repair and Support
+                                <ul>
+                                    <li>Advanced installation and configuration of operating systems and software, ensuring optimal functionality for users.</li>
+                                    <li>Computer assembly and preventive and corrective maintenance, ensuring efficiency and extending the lifespan of the equipment.</li>
+                                    <li>Accurate diagnosis and replacement of defective or damaged hardware components, improving system performance.</li>
+                                    <li>Comprehensive malware removal and optimization of equipment performance, increasing security and operational speed.</li>
+                                    <li>Personalized technical assistance and advice for users, resolving questions and problems.</li>
+                                </ul>
+                            </li>
+                            <li>Security Camera Installation
+                                <ul>
+                                    <li>Structured cabling for security and surveillance systems.</li>
+                                    <li>Professional installation of security cameras, ensuring their correct orientation and operation.</li>
+                                    <li>Provision of post-installation customer service, resolving incidents and ensuring user satisfaction.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education section -->
+                    <div class="education">
+                        <h3>education </h3>
+                        <ul class="list">
+                            <li>EESOPI N° 2059 - highschool level
+                                <ul>
+                                    <li>Technical high school diploma with a specialization in Computer Science.</li>
+                                    <li>Practical workshop experience, including use of tools and machinery.</li>
+                                    <li>Knowledge of basic electronics.</li>
+                                    <li>Foundations of computer systems.</li>
+                                </ul>
+                            </li>
+                            <li>Course - object-oriented programming with Arduino
+                                <ul>
+                                    <li>Design and assembly of circuits with LEDs, resistors, transistors and sensors.</li>
+                                    <li>Using the Arduino IDE and tools: loading, debugging, and managing libraries.</li>
+                                    <li>Programming in Arduino language (C++): classes, objects, inheritance and code modularization.</li>
+                                    <li>Integration of sensors and actuators; serial communication and embedded project control.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Languages section -->
+                    <div class="languages">
+                        <h3>languages </h3>
+                        <ul class="list">
+                            <li>Spanish  Native</li>
+                            <li>English  Advanced</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </main>
         <footer>
             <!---->
             <div class="pageInfo">
                 <!---->
+                <p>CC0 1.0 Universal - Saids Ruby <span id="year">year</span></p>
             </div>
         </footer>
     </body>

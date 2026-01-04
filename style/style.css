@@ -18,6 +18,8 @@ done
   --mainBG: #f5f5fa;
   --secondaryBG: #e6e6f0;
   --text: #1e1e2d;
+  --pinkAccent: #c81450;
+  --cyanAccent: #00a0af;
   --shadow: rgba(30, 30, 45, 0.2); }
 
 @font-face {
@@ -46,6 +48,8 @@ done
   --mainBG: #f5f5fa;
   --secondaryBG: #e6e6f0;
   --text: #1e1e2d;
+  --pinkAccent: #c81450;
+  --cyanAccent: #00a0af;
   --shadow: rgba(30, 30, 45, 0.2); }
 
 * {
@@ -79,7 +83,17 @@ header {
     align-items: center; }
     header .headerContent .navMenu {
       display: flex;
-      gap: 1rem; }
+      gap: 1rem;
+      font-size: 1.2rem; }
+      header .headerContent .navMenu .selected {
+        border-bottom: 0.2rem solid transparent;
+        animation: borderFadeIn 0.2s ease-out forwards; }
+
+@keyframes borderFadeIn {
+  from {
+    border-bottom-color: transparent; }
+  to {
+    border-bottom-color: var(--pinkAccent); } }
       header .headerContent .navMenu a {
         text-decoration: none;
         color: var(--text); }
@@ -123,11 +137,17 @@ footer {
   display: flex;
   align-self: flex-end;
   justify-content: center;
+  align-content: center;
   width: 100%;
   height: 24rem;
   padding-left: 24rem;
   padding-right: 24rem;
   background-color: var(--secondaryBG); }
+  footer .pageInfo {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: var(--text); }
 
 :root {
   --mainBG: #100818;
@@ -141,6 +161,8 @@ footer {
   --mainBG: #f5f5fa;
   --secondaryBG: #e6e6f0;
   --text: #1e1e2d;
+  --pinkAccent: #c81450;
+  --cyanAccent: #00a0af;
   --shadow: rgba(30, 30, 45, 0.2); }
 
 .saids-sh {
@@ -165,3 +187,70 @@ footer {
     background-position: 200% 50%; } }
   .saids-sh img {
     width: 32rem; }
+
+:root {
+  --mainBG: #100818;
+  --secondaryBG: #1a1228;
+  --text: #e0e0e0;
+  --shadow: rgba(224, 224, 224, 0.4);
+  --pinkAccent: #ff2a6d;
+  --cyanAccent: #05d9e8; }
+
+.lightTheme {
+  --mainBG: #f5f5fa;
+  --secondaryBG: #e6e6f0;
+  --text: #1e1e2d;
+  --pinkAccent: #c81450;
+  --cyanAccent: #00a0af;
+  --shadow: rgba(30, 30, 45, 0.2); }
+
+.saids-sh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 4rem; }
+  .saids-sh .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .saids-sh .profile img {
+      max-width: 256px;
+      height: auto; }
+    .saids-sh .profile .description {
+      display: flex;
+      flex-direction: column; }
+      .saids-sh .profile .description h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        font-weight: bold; }
+      .saids-sh .profile .description p {
+        padding-top: 1rem;
+        border-top: 2px solid var(--cyanAccent); }
+  .saids-sh .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .saids-sh .content div {
+      border-top: 1px solid var(--cyanAccent);
+      padding-top: 1rem;
+      margin-top: 2rem; }
+      .saids-sh .content div h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 1rem; }
+      .saids-sh .content div .list {
+        list-style: " ";
+        margin-bottom: 1rem;
+        text-align: left;
+        padding-left: 8rem;
+        padding-right: 8rem; }
+        .saids-sh .content div .list ul {
+          list-style: " ";
+          padding-left: 2rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          text-align: left; }

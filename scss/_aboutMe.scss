@@ -1,0 +1,73 @@
+@import 'variables';
+
+.saids-sh { // About section main container
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 4rem;
+
+    .profile { // Profile block (image + short description)
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img { // Profile image
+            max-width: 256px;
+            height: auto; // Keep proportions
+        }
+
+        .description { // Text description next to image
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 2.4rem;
+                margin-bottom: 1rem; // Space between title and paragraph
+                font-weight: bold;
+            }
+
+            p {
+                padding-top: 1rem;
+                border-top: 2px solid var(--cyanAccent); // Subtle divider line
+            }
+        }
+    }
+
+    .content { // Main content section (skills, experience, etc.)
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div { // Each content block inside "content"
+            border-top: 1px solid var(--cyanAccent); // Section separator
+            padding-top: 1rem;
+            margin-top: 2rem;
+
+            h3 { // Section title
+                font-size: 2rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-align: center;
+                margin: 1rem;
+            }
+
+            .list { // Custom list styling
+                list-style: " "; // Custom bullet symbol
+                margin-bottom: 1rem;
+                text-align: left;
+                padding-left: 8rem;
+                padding-right: 8rem;
+                
+                ul { // Nested lists (for sub-items)
+                    list-style: " "; // Symbol for sub-items
+                    padding-left: 2rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
