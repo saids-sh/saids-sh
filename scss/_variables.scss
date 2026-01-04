@@ -1,0 +1,29 @@
+$mainBG-LT: rgba(245, 245, 250, 1);
+$secondaryBG-LT: rgba(230, 230, 240, 1);
+$text-LT: rgba(30, 30, 45, 1);
+$pinkAccent-LT: rgba(200, 20, 80, 1);
+$shadow-LT: rgba(30, 30, 45, 0.2);
+
+$mainBG-DT: rgba(16, 8, 24, 1);
+$secondaryBG-DT: rgba(26, 18, 40, 1);
+$text-DT: rgba(224, 224, 224, 1);
+$pinkAccent-DT: rgba(255, 42, 109, 1);
+$cyanAccent-DT: rgba(5, 217, 232, 1);
+$shadow-DT: rgba(224, 224, 224, 0.4);
+$containers-DT: rgba(26, 2, 37, 1);
+
+:root {
+    --mainBG: #{$mainBG-DT};
+    --secondaryBG: #{$secondaryBG-DT};
+    --text: #{$text-DT};
+    --shadow: #{$shadow-DT};
+    --pinkAccent: #{$pinkAccent-DT};
+    --cyanAccent: #{$cyanAccent-DT};
+}
+
+.lightTheme {
+    --mainBG: #{$mainBG-LT};
+    --secondaryBG: #{$secondaryBG-LT};
+    --text: #{$text-LT};
+    --shadow: #{$shadow-LT};
+}

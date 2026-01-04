@@ -6,3 +6,162 @@ inotifywait -m -r -e modify,create,delete --format '%w%f' **scss/** | while read
     echo "Compilación lista."
 done
 */
+:root {
+  --mainBG: #100818;
+  --secondaryBG: #1a1228;
+  --text: #e0e0e0;
+  --shadow: rgba(224, 224, 224, 0.4);
+  --pinkAccent: #ff2a6d;
+  --cyanAccent: #05d9e8; }
+
+.lightTheme {
+  --mainBG: #f5f5fa;
+  --secondaryBG: #e6e6f0;
+  --text: #1e1e2d;
+  --shadow: rgba(30, 30, 45, 0.2); }
+
+@font-face {
+  font-family: 'Symbols Nerd Font';
+  src: url("../assets/fonts/symbolsNerdFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'iMWriting Nerd Font';
+  src: url("../assets/fonts/iMWritingMonoNerdFont-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+:root {
+  --mainBG: #100818;
+  --secondaryBG: #1a1228;
+  --text: #e0e0e0;
+  --shadow: rgba(224, 224, 224, 0.4);
+  --pinkAccent: #ff2a6d;
+  --cyanAccent: #05d9e8; }
+
+.lightTheme {
+  --mainBG: #f5f5fa;
+  --secondaryBG: #e6e6f0;
+  --text: #1e1e2d;
+  --shadow: rgba(30, 30, 45, 0.2); }
+
+* {
+  font-family: 'iMWriting Nerd Font', 'Symbols Nerd Font';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: var(--mainBG); }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  background-color: var(--secondaryBG);
+  color: var(--text); }
+  header .title h1 a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 3.2rem; }
+  header .headerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    header .headerContent .navMenu {
+      display: flex;
+      gap: 1rem; }
+      header .headerContent .navMenu a {
+        text-decoration: none;
+        color: var(--text); }
+    header .headerContent .themeToggle {
+      display: flex;
+      margin-left: 2rem; }
+      header .headerContent .themeToggle .toggleButton {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        background-color: transparent;
+        color: transparent;
+        border: none;
+        border-radius: 0.4rem;
+        cursor: pointer; }
+        header .headerContent .themeToggle .toggleButton:hover .icon {
+          text-shadow: 0 0 5px var(--shadow), 0 0 10px var(--shadow), 0 0 20px var(--shadow); }
+        header .headerContent .themeToggle .toggleButton:active {
+          transform: scale(0.9); }
+          header .headerContent .themeToggle .toggleButton:active .icon {
+            text-shadow: none; }
+        header .headerContent .themeToggle .toggleButton .icon {
+          font-size: 1.6rem;
+          color: var(--text);
+          transition: text-shadow 0.2s ease; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  background-color: var(--mainBG);
+  color: var(--text); }
+
+footer {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  width: 100%;
+  height: 24rem;
+  padding-left: 24rem;
+  padding-right: 24rem;
+  background-color: var(--secondaryBG); }
+
+:root {
+  --mainBG: #100818;
+  --secondaryBG: #1a1228;
+  --text: #e0e0e0;
+  --shadow: rgba(224, 224, 224, 0.4);
+  --pinkAccent: #ff2a6d;
+  --cyanAccent: #05d9e8; }
+
+.lightTheme {
+  --mainBG: #f5f5fa;
+  --secondaryBG: #e6e6f0;
+  --text: #1e1e2d;
+  --shadow: rgba(30, 30, 45, 0.2); }
+
+.saids-sh {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .saids-sh .intro h2 {
+    font-size: 4rem; }
+    .saids-sh .intro h2 .name {
+      background: linear-gradient(90deg, var(--pinkAccent), var(--cyanAccent), var(--pinkAccent));
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      display: inline-block;
+      color: transparent;
+      animation: gradient-flow 4s linear infinite; }
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 200% 50%; } }
+  .saids-sh img {
+    width: 32rem; }
